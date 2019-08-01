@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FontText">
+        <attr name="typefaceAsset" format="string"/>
+    </declare-styleable>
+
+    <attr name="mainBackground" format="color" />
+    <attr name="buttonColor" format="reference"/>
+    <attr name="mainPageButtonTextColor" format="color"/>
+    <attr name="mainTextColor" format="color"/>
+
+</resources>

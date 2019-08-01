@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="alihamuh.islamic.book.sahihbukhari.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/bookmarkView_setting"
+        android:orderInCategory="100"
+        android:title="Bookmarks"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/search_setting"
+        android:title="Search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/bookmark_setting"
+        android:title="Bookmark"
+        android:icon="@drawable/ic_bookmark_black_24dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/nightmode_setting"
+        android:title="Night Mode"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_night_mode"/>
+
+
+</menu>

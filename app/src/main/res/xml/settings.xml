@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_title_notifications">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="nightmode"
+            android:title="@string/title_nightmode_screen" />
+    </PreferenceCategory>
+
+      <PreferenceCategory android:title="Show Texts">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="arbText"
+            android:title="Arabic" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="engText"
+            android:title="English" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="urdText"
+            android:title="Urdu" />
+      </PreferenceCategory>
+       <PreferenceCategory android:title="Font Size">
+        <alihamuh.islamic.book.sahihbukhari.Settings.seekbarPreference
+            android:title="Arabic Font Size"
+            android:defaultValue="20"
+            android:key="arbFontSize"
+            android:layout="@layout/seekbarpreferencelayout"/>
+
+        <alihamuh.islamic.book.sahihbukhari.Settings.seekbarPreference
+            android:title="English Font Size"
+            android:defaultValue="20"
+            android:key="engFontSize"
+            android:layout="@layout/seekbarpreferencelayout"/>
+
+        <alihamuh.islamic.book.sahihbukhari.Settings.seekbarPreference
+            android:title="Urdu Font Size"
+            android:defaultValue="20"
+            android:key="urdFontSize"
+            android:layout="@layout/seekbarpreferencelayout"/>
+
+       </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_header_about">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/summary_about" />
+
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/title_version" />
+
+        <Preference
+            android:key="@string/key_send_feedback"
+            android:summary="@string/summary_support"
+            android:title="@string/title_send_feedback" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

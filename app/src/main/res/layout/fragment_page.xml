@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    tools:showIn="@layout/activity_main"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/hadith_text_size"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:id="@+id/hadithNo"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:id="@+id/local_share_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:background="#00ffffff"
+                    android:layout_weight="0.2"/>
+
+
+            </LinearLayout>
+
+            <alihamuh.islamic.book.sahihbukhari.Font_helpers.FontText
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/hadith_text_size"
+                android:text="Hello World!"
+                android:lineSpacingExtra="10dp"
+                android:letterSpacing="0.11"
+                custom:typefaceAsset="fonts/muhammadi.ttf"
+                />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/hadith_text_margins"
+                android:textSize="@dimen/hadith_text_size"
+                android:text="Hello World!"
+                />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/hadith_text_margins"
+                android:textSize="@dimen/hadith_text_size"
+                android:text="Hello World!"
+                />
+
+            <alihamuh.islamic.book.sahihbukhari.Font_helpers.FontText
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/hadith_text_margins"
+                android:textSize="@dimen/hadith_text_size"
+                android:lineSpacingExtra="50dp"
+                android:text="Hello World!"
+                custom:typefaceAsset="fonts/alvi.ttf"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/hadith_text_margins">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/hadith_text_size"
+                    android:text="@string/Reference_one_Title"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryLightColor"/>
+
+                <TextView
+                    android:id="@+id/ref1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/hadith_text_size"
+                    android:text="a la la al"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/hadith_text_margins">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/hadith_text_size"
+                    android:text="@string/Reference_two_Title"
+                    android:textColor="@color/primaryLightColor"/>
+
+                <TextView
+                    android:id="@+id/ref2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/hadith_text_size"
+                    android:text="a la la al"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/hadith_text_margins">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/hadith_text_size"
+                    android:textColor="@color/primaryLightColor"
+                    android:text="@string/Reference_three_Title"/>
+
+                <TextView
+                    android:id="@+id/ref3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/hadith_text_size"
+                    android:text="a la la al"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

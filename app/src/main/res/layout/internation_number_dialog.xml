@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/primaryTextColor">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Enter Intenational #"
+        android:textColor="#bca301" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/international_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/primaryColor"
+            android:hint="1-7563"
+            android:textColorHint="#38000000"
+            android:inputType="number"
+            android:minWidth="100dp"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_cancel"
+            android:background="@color/primaryTextColor"
+            android:textColor="#bca301" />
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryTextColor"
+            android:text="@string/dialog_go"
+            android:textColor="#bca301"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+        <item name="mainBackground">#ffffff</item>
+        <item name="buttonColor">@drawable/juz_btn_selector</item>
+        <item name="mainPageButtonTextColor">#ffffff</item>
+        <item name="mainTextColor">#4e4e4e</item>
+        <!--item name="colorPrimaryLight">@color/primaryLightColor</item-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NightAppThem" parent="Theme.Design">
+          <item name="mainBackground">#313131</item>
+          <item name="buttonColor">@drawable/juz_button_selector_night</item>
+          <item name="mainPageButtonTextColor">#222222</item>
+          <item name="mainTextColor">#ffffff</item>
+    </style>
+
+    <style name="NightAppThem.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- For converting Relative Layout to act like a Button-->
+    <style name="ButtonStyle" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:background">?buttonColor</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <!-- For the English TextViews inside the converted Layout-->
+    <style name="btnTxtViewStyle" parent="Theme.AppCompat">
+        <item name="android:textColor">?attr/mainPageButtonTextColor</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- For Arabic Text View inside the converted Layout-->
+    <style name="arbBtnTxtViewStyle" parent="Theme.AppCompat">
+        <item name="android:textColor">?attr/mainPageButtonTextColor</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">29dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:focusable">true</item>
+
+    </style>
+
+
+    <style name="splashScreenTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bukhari_main_page</item>
+    </style>
+
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+
+        <item name="android:background">#ff0004</item>
+
+    </style>
+
+</resources>
